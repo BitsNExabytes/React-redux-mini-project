@@ -1,8 +1,44 @@
 {
   "students": [
-      {
-
-  }
-
-]
+    {
+      "id": 1,
+      "firstName": "Tim",
+      "lastName": "Jones",
+      "major": "Computer Science",
+      "gpa": 2.7,
+      "DateInMajor": "12-11-2018"
+    },
+    {
+      "id": 3,
+      "firstName": "Barry",
+      "lastName": "Allen",
+      "major": "Computer Science",
+      "gpa": 4.0,
+      "DateInMajor": "04-1-2019"
+    },
+    {
+      "id": 4,
+      "firstName": "Ben",
+      "lastName": "Shapiro",
+      "major": "Lesbian Dance Theory",
+      "gpa": 3.4,
+      "DateInMajor": "08-13-2020"
+    },
+    {
+      "id": 5,
+      "firstName": "Teddy",
+      "lastName": "Jones",
+      "major": "Lesbian Dance Theory",
+      "gpa": 3.14,
+      "DateInMajor": "09-13-2020"
+    },
+    {
+      "firstName": "Danica",
+      "lastName": "Williams",
+      "major": "Fire Fighting",
+      "gpa": 2.5,
+      "DateInMajor": "11-10-2014",
+      "id": 6
+    }
+  ]
 }
