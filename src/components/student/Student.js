@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { getStudents } from '../../actions/studentActions';
 import PropTypes from 'prop-types';
 
-const Student = ({ student, getStudents }) => {
+const Student = ({ student: { students, loading }, getStudents }) => {
   useEffect(() => {
     getStudents();
     // eslint-disable-next-line

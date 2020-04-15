@@ -9,6 +9,9 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 //bring in provider
 import { Provider } from 'react-redux';
 
+// import student
+import Student from './components/student/Student';
+
 //bring in store
 import store from './store';
 
@@ -23,6 +26,7 @@ const App = () => {
     <Provider store={store}>
       <Fragment>
         <h3>This is our app running</h3>
+        <Student />
       </Fragment>
     </Provider>
   );

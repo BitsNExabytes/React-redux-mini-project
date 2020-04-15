@@ -5,19 +5,39 @@ import {
   DELETE_STUDENT,
 } from '../actions/types';
 
-//GET STUDENTS
+// //GET STUDENTS
+// export const getStudents = () => async (dispatch) => {
+//   try {
+//     //set loading state
+//     setLoading();
+
+//     console.log('fetching students');
+
+//     //fetch students from server
+//     const res = await fetch('/students');
+
+//     //convert students from string into a json object
+//     const data = await res.json();
+
+//     //dispatch result to the reducer
+//     dispatch({ type: GET_STUDENT, payload: data });
+//   } catch (error) {
+//     dispatch({ type: STUDENT_ERROR, payload: error.response.statusText });
+//   }
+// };
+
+// get logs from server
 export const getStudents = () => async (dispatch) => {
   try {
-    //set loading state
+    //set loading to true
     setLoading();
 
-    //fetch students from server
-    const res = await fetch('/students');
+    //fetch logs
+    const res = await fetch('http://localhost:5000/students');
 
-    //convert students from string into a json object
+    //convert logs to json
     const data = await res.json();
 
-    //dispatch result to the reducer
     dispatch({ type: GET_STUDENT, payload: data });
   } catch (error) {
     dispatch({ type: STUDENT_ERROR, payload: error.response.statusText });
