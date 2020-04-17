@@ -5,6 +5,7 @@
       "firstName": "Tim",
       "lastName": "Jones",
       "major": "Computer Science",
+      "image": "https://randomuser.me/api/portraits/men/15.jpg",
       "gpa": 2.7,
       "DateInMajor": "12-11-2018"
     },
@@ -13,6 +14,7 @@
       "firstName": "Barry",
       "lastName": "Allen",
       "major": "Computer Science",
+      "image": "https://randomuser.me/api/portraits/men/16.jpg",
       "gpa": 4.0,
       "DateInMajor": "04-1-2019"
     },
@@ -21,14 +23,16 @@
       "firstName": "Ben",
       "lastName": "Shapiro",
       "major": "Lesbian Dance Theory",
+      "image": "https://randomuser.me/api/portraits/men/17.jpg",
       "gpa": 3.4,
       "DateInMajor": "08-13-2020"
     },
     {
       "id": 5,
-      "firstName": "Teddy",
+      "firstName": "Bianca",
       "lastName": "Jones",
       "major": "Lesbian Dance Theory",
+      "image": "https://randomuser.me/api/portraits/women/10.jpg",
       "gpa": 3.14,
       "DateInMajor": "09-13-2020"
     },
@@ -36,9 +40,37 @@
       "firstName": "Danica",
       "lastName": "Williams",
       "major": "Fire Fighting",
+      "image": "https://randomuser.me/api/portraits/women/12.jpg",
       "gpa": 2.5,
       "DateInMajor": "11-10-2014",
       "id": 6
+    },
+    {
+      "firstName": "Layla",
+      "lastName": "Allen",
+      "major": "Sports Medicine",
+      "image": "https://randomuser.me/api/portraits/women/14.jpg",
+      "gpa": 3.1,
+      "DateInMajor": "12-2-2017",
+      "id": 7
+    },
+    {
+      "firstName": "Brent",
+      "lastName": "Simone",
+      "major": "Math",
+      "image": "https://randomuser.me/api/portraits/men/20.jpg",
+      "gpa": 2.5,
+      "DateInMajor": "11-10-2014",
+      "id": 8
+    },
+    {
+      "firstName": "Emmanuel",
+      "lastName": "Idel",
+      "major": "Fire Fighting",
+      "image": "https://randomuser.me/api/portraits/men/21.jpg",
+      "gpa": 3.05,
+      "DateInMajor": "11-10-2014",
+      "id": 9
     }
   ]
 }

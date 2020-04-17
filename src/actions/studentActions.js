@@ -33,7 +33,7 @@ export const getStudents = () => async (dispatch) => {
     setLoading();
 
     //fetch logs
-    const res = await fetch('http://localhost:5000/students');
+    const res = await fetch('/students');
 
     //convert logs to json
     const data = await res.json();

@@ -25,8 +25,9 @@ const App = () => {
   return (
     <Provider store={store}>
       <Fragment>
-        <h3>This is our app running</h3>
-        <Student />
+        <div className='container'>
+          <Student />
+        </div>
       </Fragment>
     </Provider>
   );
