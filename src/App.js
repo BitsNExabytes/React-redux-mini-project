@@ -24,11 +24,11 @@ const App = () => {
   });
   return (
     <Provider store={store}>
-      <Fragment>
+      <>
         <div className='container'>
           <Student />
         </div>
-      </Fragment>
+      </>
     </Provider>
   );
 };
