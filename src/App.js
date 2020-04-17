@@ -15,6 +15,9 @@ import Student from './components/student/Student';
 //bring in store
 import store from './store';
 
+//bring in navbar
+import Navbar from './components/layout/Navbar';
+
 import './App.css';
 
 const App = () => {
@@ -25,6 +28,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <>
+        <Navbar />
         <div className='container'>
           <Student />
         </div>

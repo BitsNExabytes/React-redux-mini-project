@@ -2,6 +2,7 @@ import {
   GET_STUDENT,
   STUDENT_ERROR,
   SET_LOADING,
+  SEARCH_STUDENT,
   DELETE_STUDENT,
 } from '../actions/types';
 
@@ -21,6 +22,13 @@ export default (state = initialState, action) => {
       };
 
     case GET_STUDENT:
+      return {
+        ...state,
+        students: action.payload,
+        loading: false,
+      };
+
+    case SEARCH_STUDENT:
       return {
         ...state,
         students: action.payload,

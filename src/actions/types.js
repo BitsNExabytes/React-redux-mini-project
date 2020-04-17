@@ -2,3 +2,4 @@ export const GET_STUDENT = 'GET_STUDENT';
 export const STUDENT_ERROR = 'STUDENT_ERROR';
 export const SET_LOADING = 'SET_LOADING';
 export const DELETE_STUDENT = 'DELETE_STUDENT';
+export const SEARCH_STUDENT = 'SEARCH_STUDENTS';

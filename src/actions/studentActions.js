@@ -2,6 +2,7 @@ import {
   GET_STUDENT,
   STUDENT_ERROR,
   SET_LOADING,
+  SEARCH_STUDENT,
   DELETE_STUDENT,
 } from '../actions/types';
 
@@ -39,6 +40,26 @@ export const getStudents = () => async (dispatch) => {
     const data = await res.json();
 
     dispatch({ type: GET_STUDENT, payload: data });
+  } catch (error) {
+    dispatch({ type: STUDENT_ERROR, payload: error.response.statusText });
+  }
+};
+
+//SEARCH STUDENTS
+export const searchStudents = (student) => async (dispatch) => {
+  try {
+    //set loading to true
+    setLoading();
+
+    //fetch student from database
+    const res = await fetch(`students?q=${student}`);
+
+    //turn string into javascript object
+    const data = await res.json();
+
+    //dispatch result to reducer
+
+    dispatch({ type: SEARCH_STUDENT, payload: data });
   } catch (error) {
     dispatch({ type: STUDENT_ERROR, payload: error.response.statusText });
   }
