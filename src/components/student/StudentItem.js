@@ -5,9 +5,12 @@ const StudentItem = ({ student }) => {
   return (
     <div className='row'>
       <div className='col s12 m6'>
-        <div className='card  ndigo lighten-5 darken-1'>
+        <div
+          className='card  ndigo lighten-5 darken-1'
+          style={{ width: '300px' }}
+        >
           <img
-            className='responsive-img circle '
+            className='responsive-img circle'
             src={student.image}
             style={{ width: '100px', marginTop: '1.5rem' }}
           />
