@@ -1,7 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { deleteStudent } from '../../actions/studentActions';
+import M from 'materialize-css/dist/js/materialize.min.js';
 
-const StudentItem = ({ student }) => {
+const StudentItem = ({ student, deleteStudent }) => {
+  const removeStudent = () => {
+    deleteStudent(student.id);
+    M.toast({
+      html: `Student ${student.firstName} ${student.lastName} was removed`,
+    });
+  };
   return (
     <div className='row'>
       <div className='col s12 m6'>
@@ -25,6 +34,11 @@ const StudentItem = ({ student }) => {
               <li className='collection-item'>
                 Enrolled: {student.DateInMajor}
               </li>
+              <li className='collection-item'>
+                <a href='#!' onClick={removeStudent}>
+                  <i className='material-icons grey-text'>delete</i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -35,5 +49,6 @@ const StudentItem = ({ student }) => {
 
 StudentItem.propType = {
   student: PropTypes.object.isRequired,
+  deleteStudent: PropTypes.func.isRequired,
 };
-export default StudentItem;
+export default connect(null, { deleteStudent })(StudentItem);

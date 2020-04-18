@@ -67,6 +67,20 @@ export const searchStudents = (student) => async (dispatch) => {
 
 //DELETE STUDENT
 
+export const deleteStudent = (id) => async (dispatch) => {
+  try {
+    setLoading();
+
+    await fetch(`/students/${id}`, {
+      method: 'DELETE',
+    });
+
+    dispatch({ type: DELETE_STUDENT, payload: id });
+  } catch (error) {
+    dispatch({ type: STUDENT_ERROR, payload: error.response.statusText });
+  }
+};
+
 //SET LOADING TO TRUE
 export const setLoading = () => {
   return {

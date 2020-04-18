@@ -35,6 +35,15 @@ export default (state = initialState, action) => {
         loading: false,
       };
 
+    case DELETE_STUDENT:
+      return {
+        ...state,
+        students: state.students.filter(
+          (student) => student.id !== action.payload
+        ),
+        loading: false,
+      };
+
     case STUDENT_ERROR:
       console.error(action.payload);
       return {

@@ -18,6 +18,9 @@ import store from './store';
 //bring in navbar
 import Navbar from './components/layout/Navbar';
 
+//bring in footer
+import Footer from './components/layout/Footer';
+
 import './App.css';
 
 const App = () => {
@@ -32,6 +35,7 @@ const App = () => {
         <div className='container'>
           <Student />
         </div>
+        <Footer />
       </>
     </Provider>
   );
