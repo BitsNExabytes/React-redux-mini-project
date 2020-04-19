@@ -4,11 +4,13 @@ import {
   SET_LOADING,
   SEARCH_STUDENT,
   DELETE_STUDENT,
+  GET_RANDOM_STUDENT,
 } from '../actions/types';
 
 // set initial state
 const initialState = {
   students: null,
+  random: null,
   loading: false,
   error: null,
 };
@@ -32,6 +34,13 @@ export default (state = initialState, action) => {
       return {
         ...state,
         students: action.payload,
+        loading: false,
+      };
+
+    case GET_RANDOM_STUDENT:
+      return {
+        ...state,
+        random: action.payload,
         loading: false,
       };
 

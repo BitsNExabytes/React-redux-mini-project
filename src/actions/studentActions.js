@@ -4,6 +4,8 @@ import {
   SET_LOADING,
   SEARCH_STUDENT,
   DELETE_STUDENT,
+  ADD_STUDENT,
+  GET_RANDOM_STUDENT,
 } from '../actions/types';
 
 // //GET STUDENTS
@@ -64,6 +66,24 @@ export const searchStudents = (student) => async (dispatch) => {
     dispatch({ type: STUDENT_ERROR, payload: error.response.statusText });
   }
 };
+
+//get random student
+
+export const getRandomStudent = (gender) => async (dispatch) => {
+  try {
+    setLoading();
+
+    const res = await fetch(`https://randomuser.me/api/?gender=${gender}`);
+
+    const data = await res.json();
+
+    dispatch({ type: GET_RANDOM_STUDENT, payload: data });
+  } catch (error) {
+    dispatch({ type: STUDENT_ERROR, payload: error.response.statusText });
+  }
+};
+
+export const addStudent = () => async (dispatch) => {};
 
 //DELETE STUDENT
 

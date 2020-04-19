@@ -18,6 +18,10 @@ import store from './store';
 //bring in navbar
 import Navbar from './components/layout/Navbar';
 
+import AddButton from './components/student/AddButton';
+
+import AddStudentModal from './components/student/AddStudentModal';
+
 //bring in footer
 import Footer from './components/layout/Footer';
 
@@ -33,6 +37,9 @@ const App = () => {
       <>
         <Navbar />
         <div className='container'>
+          <AddButton />
+          <AddStudentModal />
+
           <Student />
         </div>
         <Footer />

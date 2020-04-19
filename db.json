@@ -1,13 +1,40 @@
 {
   "students": [
     {
-      "id": 4,
+      "id": 1,
       "firstName": "Ben",
       "lastName": "Shapiro",
       "major": "Lesbian Dance Theory",
       "image": "https://randomuser.me/api/portraits/men/17.jpg",
       "gpa": 3.4,
       "DateInMajor": "08-13-2020"
+    },
+    {
+      "firstName": "Jessica",
+      "lastName": "Jones",
+      "major": "Biology",
+      "image": "https://randomuser.me/api/portraits/women/10.jpg",
+      "gpa": 2.5,
+      "DateInMajor": "11-10-2014",
+      "id": 2
+    },
+    {
+      "firstName": "Danica",
+      "lastName": "Williams",
+      "major": "Fire Fighting",
+      "image": "https://randomuser.me/api/portraits/women/13.jpg",
+      "gpa": 3.2,
+      "DateInMajor": "11-10-2014",
+      "id": 3
+    },
+    {
+      "firstName": "Janet",
+      "lastName": "Jackson",
+      "major": "Electronics",
+      "image": "https://randomuser.me/api/portraits/women/14.jpg",
+      "gpa": 2.9,
+      "DateInMajor": "11-10-2014",
+      "id": 4
     },
     {
       "firstName": "Danica",
@@ -17,6 +44,42 @@
       "gpa": 2.5,
       "DateInMajor": "11-10-2014",
       "id": 6
+    },
+    {
+      "firstName": "Jannet",
+      "lastName": "Williams",
+      "major": "Fire Fighting",
+      "image": "https://randomuser.me/api/portraits/women/20.jpg",
+      "gpa": 2.5,
+      "DateInMajor": "5-10-2019",
+      "id": 7
+    },
+    {
+      "firstName": "Danica",
+      "lastName": "Williams",
+      "major": "Fire Fighting",
+      "image": "https://randomuser.me/api/portraits/women/12.jpg",
+      "gpa": 2.4,
+      "DateInMajor": "3-1-16",
+      "id": 8
+    },
+    {
+      "firstName": "Tim",
+      "lastName": "Drake",
+      "major": "History",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "gpa": 3.8,
+      "DateInMajor": "2-13-2017",
+      "id": 9
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "major": "History",
+      "image": "https://randomuser.me/api/portraits/men/2.jpg",
+      "gpa": 2.75,
+      "DateInMajor": "2-13-2017",
+      "id": 9
     }
   ]
 }

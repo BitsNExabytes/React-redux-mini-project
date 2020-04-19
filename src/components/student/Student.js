@@ -1,12 +1,18 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getStudents } from '../../actions/studentActions';
+import { getRandomStudent } from '../../actions/studentActions';
 import StudentItem from './StudentItem';
 import PropTypes from 'prop-types';
 
-const Student = ({ student: { students, loading }, getStudents }) => {
+const Student = ({
+  student: { students, loading },
+  getStudents,
+  getRandomStudent,
+}) => {
   useEffect(() => {
     getStudents();
+    getRandomStudent();
     // eslint-disable-next-line
   }, []);
 
@@ -41,4 +47,6 @@ const userStyle = {
   gridGap: '1rem',
 };
 
-export default connect(mapStateToProps, { getStudents })(Student);
+export default connect(mapStateToProps, { getStudents, getRandomStudent })(
+  Student
+);
